@@ -31,9 +31,18 @@ This project is based on [Andrej Karpathy's video tutorial]([https://www.youtube
 
 ```plaintext
 .
-├── input.txt/                 # Sample datasets and preprocessing scripts
-├── bigramLM.py/               # Baseline Model architecture (bigram)
-├── notebooks/            # Jupyter notebooks for exploration and prototyping
-├── images/               # Contains images for model architecture and the outputs
-├── gpt.py               # Main script for the CharGPT model, i.e., transformer paper
-└── README.md
+├── README.md                  # Project description and setup instructions
+├── input.txt                  # Sample text data used for training and testing
+├── images/                    # Images for model architecture and sample outputs
+│   └── gpt_architecture.png   # Example: architecture image for model visualization
+│   └── outputs.png            # Example: architecture image for model visualization
+├── notebooks/                 # Jupyter notebooks for exploration and prototyping
+│   └── Char_GPT.ipynb         # Prototyping of the CharGPT model and experimentation
+├── char_gpt_model.pth         # Saved weights of the trained CharGPT model
+├── generated_text.txt         # Output generated from the model
+├── gpt_combined_script.py     # Complete scripts handling model architecture, data loading, training and prediction
+├── bigramLM.py                # Baseline model (Bigram language model implementation)
+├── model.py                   # Model definition (CharGPT model architecture)
+├── train.py                   # Training script for the CharGPT model
+├── predict.py                 # Script for generating text with the trained model
+├── utils.py                   # Helper functions used across multiple scripts
